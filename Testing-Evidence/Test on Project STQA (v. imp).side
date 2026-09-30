@@ -1,0 +1,1971 @@
+{
+  "id": "f1f4e773-0b8b-4a55-82ba-7022879d322c",
+  "version": "2.0",
+  "name": "Test on Project STQA",
+  "url": "http://localhost/studentrecordms/login.php",
+  "tests": [{
+    "id": "a9a06644-b92e-4a13-9231-00fc7e2b2238",
+    "name": "Delete a new course",
+    "commands": [{
+      "id": "8e73ad2e-33e9-4ea2-b227-65d876edfad4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "843dc525-e39d-4661-aa53-1b84c3c078cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "302d64a7-ca1d-4033-9811-9d85ab4f8711",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "d0b8c21f-7dcf-47bc-af0a-9602603754c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae6f92e5-626a-4fd0-810e-f492d3f9d45e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "578cd4bb-13e1-4b31-8b39-c8b956a7128a",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b83ac7b2-3290-47ed-8394-69faef438e7a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Course",
+      "targets": [
+        ["linkText=Course", "linkText"],
+        ["css=#side-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Course')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "819085db-b8f7-4f0b-9784-f480e9e7253c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View",
+      "targets": [
+        ["linkText=View", "linkText"],
+        ["css=.in:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage-courses.php')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58d8484d-d185-4073-8d6d-ed63fe82940a",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6598c258-6bc2-48fd-bf43-0ac43d2e46b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gradeX:nth-child(9) .btn-danger",
+      "targets": [
+        ["css=.gradeX:nth-child(9) .btn-danger", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[9]", "xpath:link"],
+        ["xpath=(//a[@onclick=\"return confirm('Do you really wan to delete?');\"])[9]", "xpath:attributes"],
+        ["xpath=//table[@id='dataTables-example']/tbody/tr[9]/td[5]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage-courses.php?del=14')]", "xpath:href"],
+        ["xpath=//tr[9]/td[5]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39ca6c1a-bb89-44e9-8cfe-d6830903ce97",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "Do you really wan to delete?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a2765e0-6df4-4fde-806d-05fb65ed5013",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5e49bcfc-470f-467d-82c1-a51b6b8a5d42",
+    "name": "Add a new subject",
+    "commands": [{
+      "id": "ee63244f-af04-4283-941e-87ba25063538",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06bb2669-fe53-49fa-85d6-1aaef3f45236",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08caa3ce-27da-4f21-bf67-9e62213988f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "79973c1c-3bf9-4dbf-81dd-9080271b83f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ebbc27f-bf1e-4d52-8093-2c9d00f20afb",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "3fc7c033-11a8-43fc-aa07-334106a17915",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b54a5982-e375-4457-b434-bf95c9b6b4f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Subject",
+      "targets": [
+        ["linkText=Subject", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Subject')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a61f0684-7b27-4076-b08b-f600c1a38fa4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Subject",
+      "targets": [
+        ["linkText=Add Subject", "linkText"],
+        ["css=.in:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Subject')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'add-subject.php')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79713fa6-92f4-417c-8dc1-e5b9b9fb6c6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=cshort",
+      "targets": [
+        ["id=cshort", "id"],
+        ["name=course-short", "name"],
+        ["css=#cshort", "css:finder"],
+        ["xpath=//select[@id='cshort']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac90ba1-87f0-44e0-9b52-047917f0517a",
+      "comment": "",
+      "command": "select",
+      "target": "id=cshort",
+      "targets": [],
+      "value": "label=MCA (MASTER OF COMPUTER APPLICATION)"
+    }, {
+      "id": "db1871e9-0185-4f74-9d3c-58813f7f66cf",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub1",
+      "targets": [
+        ["name=sub1", "name"],
+        ["css=.form-group:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub1']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bde91b8-bdd3-47ab-9f28-eacf016483c4",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub1",
+      "targets": [
+        ["name=sub1", "name"],
+        ["css=.form-group:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub1']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Advance Java"
+    }, {
+      "id": "2c74f1a0-09f7-4d20-885b-7995ddc280cf",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub2",
+      "targets": [
+        ["name=sub2", "name"],
+        ["css=.form-group:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub2']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dedc5889-15eb-4da7-a2e7-496b22acb8bf",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub2",
+      "targets": [
+        ["name=sub2", "name"],
+        ["css=.form-group:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub2']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "OS"
+    }, {
+      "id": "05a99c3b-aa6c-4999-9d4e-c30285b2ff76",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub3",
+      "targets": [
+        ["name=sub3", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub3']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2554c40b-34c5-4b1f-962c-c95d0d233c74",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub3",
+      "targets": [
+        ["name=sub3", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub3']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b18b5194-3880-4a5f-ae19-c3e5ba485f34",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=sub3",
+      "targets": [
+        ["name=sub3", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub3']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aee4b280-8be0-4abe-9e73-01a0500c052a",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub3",
+      "targets": [
+        ["name=sub3", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub3']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "stqa"
+    }, {
+      "id": "e102d543-7064-4354-b11a-4ef66308d195",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub4",
+      "targets": [
+        ["name=sub4", "name"],
+        ["css=.form-group:nth-child(13) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub4']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42aa54ca-9e75-40f9-9337-ed39a0d10e27",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub4",
+      "targets": [
+        ["name=sub4", "name"],
+        ["css=.form-group:nth-child(13) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub4']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Android"
+    }, {
+      "id": "3cf0d9fc-eeb1-4ea5-a61b-6efd4fd634d2",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d474e387-a4d9-4f41-b251-a5f52b4530be",
+    "name": "Add a new subject (no course)",
+    "commands": [{
+      "id": "8c7a0282-987d-4ad4-aba1-efe39c9e986d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7671d733-c290-4307-911e-d990dc9e27be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5785871c-c069-4536-9376-db48b3dd32ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "94a64968-862a-4ef9-af78-971e9c18bb75",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b67035fa-c276-4983-969f-aff48900822f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "f587ebf9-f4ea-4fe9-9e34-219f2d53e77f",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5ab9021-7c12-41db-9798-981218f8e433",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Subject",
+      "targets": [
+        ["linkText=Subject", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Subject')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e9150b-6145-426d-ac38-46e0d305b846",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Subject",
+      "targets": [
+        ["linkText=Add Subject", "linkText"],
+        ["css=.in:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Subject')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'add-subject.php')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e28b5a7-fe76-4576-92e0-236a04176fa4",
+      "comment": "",
+      "command": "click",
+      "target": "id=cshort",
+      "targets": [
+        ["id=cshort", "id"],
+        ["name=course-short", "name"],
+        ["css=#cshort", "css:finder"],
+        ["xpath=//select[@id='cshort']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe92728-034c-4959-9341-c269055c4ff6",
+      "comment": "",
+      "command": "click",
+      "target": "id=cshort",
+      "targets": [
+        ["id=cshort", "id"],
+        ["name=course-short", "name"],
+        ["css=#cshort", "css:finder"],
+        ["xpath=//select[@id='cshort']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2766d2c1-b3cc-42ae-9611-ddbdcc2fd187",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub1",
+      "targets": [
+        ["name=sub1", "name"],
+        ["css=.form-group:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub1']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25f8bcc7-34b0-4457-b514-b7ad20fa6a0d",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub1",
+      "targets": [
+        ["name=sub1", "name"],
+        ["css=.form-group:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub1']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Advance Java"
+    }, {
+      "id": "e70cb47e-1935-4f2d-a2cd-9e43ee4980bf",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub2",
+      "targets": [
+        ["name=sub2", "name"],
+        ["css=.form-group:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub2']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3cadced-6614-4e33-ab97-12a995155093",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub2",
+      "targets": [
+        ["name=sub2", "name"],
+        ["css=.form-group:nth-child(7) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub2']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "OS"
+    }, {
+      "id": "79911963-6809-4fe4-a9d3-15512cfb1464",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub3",
+      "targets": [
+        ["name=sub3", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub3']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9df23c9-80fa-494b-829c-2720e2272b7c",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub3",
+      "targets": [
+        ["name=sub3", "name"],
+        ["css=.form-group:nth-child(10) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub3']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "stqa"
+    }, {
+      "id": "57383636-1546-4997-bbe3-e75fc511afba",
+      "comment": "",
+      "command": "click",
+      "target": "name=sub4",
+      "targets": [
+        ["name=sub4", "name"],
+        ["css=.form-group:nth-child(13) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub4']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb0bf67-835b-4697-a2bb-5f77c0b83273",
+      "comment": "",
+      "command": "type",
+      "target": "name=sub4",
+      "targets": [
+        ["name=sub4", "name"],
+        ["css=.form-group:nth-child(13) .form-control", "css:finder"],
+        ["xpath=//input[@name='sub4']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[5]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Android"
+    }, {
+      "id": "975e4396-80dc-40f3-8d63-92d4b3c08955",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8a3e965a-c2c7-4fe1-9bb1-be1cacd7bd2b",
+    "name": "Add a new subject (blank)",
+    "commands": [{
+      "id": "b6c8cb35-d323-4af4-81e5-43de3a5c4abe",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25ea5a19-5d6a-45ff-8b1b-0b8a80d7c173",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0b3f123-8602-42b5-8629-32b99968a9df",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "478ebdae-63ae-4666-b4c6-47d96821dd18",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fabbe35-c033-455c-883b-4b1f3f7b67a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "f12bd461-a2af-44f3-b104-47de1ca69e7a",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "177b17ed-b58f-4ee8-b480-87ff1168e8a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Subject",
+      "targets": [
+        ["linkText=Subject", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Subject')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa7c144-b36b-45d2-af1a-6c5c94646263",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add Subject",
+      "targets": [
+        ["linkText=Add Subject", "linkText"],
+        ["css=.in:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Add Subject')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[3]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'add-subject.php')]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "886a15be-c022-49a7-bd28-5179a2871dd1",
+      "comment": "",
+      "command": "click",
+      "target": "id=cshort",
+      "targets": [
+        ["id=cshort", "id"],
+        ["name=course-short", "name"],
+        ["css=#cshort", "css:finder"],
+        ["xpath=//select[@id='cshort']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdda4465-6d00-45e2-83f6-30637d255788",
+      "comment": "",
+      "command": "select",
+      "target": "id=cshort",
+      "targets": [],
+      "value": "label=MCA (MASTER OF COMPUTER APPLICATION)"
+    }, {
+      "id": "15fdfa10-99dd-437a-a149-65b66e4005ad",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "67654241-5435-4916-be1c-3b620f0be281",
+    "name": "change email id in admin profile ",
+    "commands": [{
+      "id": "bb38ce97-6f44-4633-a9c9-e169a33ab70d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "280895a7-aa84-46a1-ae05-957a9d126f89",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2c08493-2821-4247-aa83-97b0b1b145fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab5c2635-b607-4b91-9274-a06b9736f51a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "84c78b08-1619-4f97-8c15-ccf83d766217",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54380ef0-ea9f-4931-a045-d6f7c74b4fa4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "0849898a-9a74-44bf-b4a9-afd2cec9b13d",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb18645d-4e08-48cb-a1d9-f9903c329391",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Admin Profile",
+      "targets": [
+        ["linkText=Admin Profile", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin Profile')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'admin-profile.php')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "973b1c71-ce50-4f15-91e8-ce9183ff2488",
+      "comment": "",
+      "command": "click",
+      "target": "id=aemailid",
+      "targets": [
+        ["id=aemailid", "id"],
+        ["name=aemailid", "name"],
+        ["css=#aemailid", "css:finder"],
+        ["xpath=//input[@id='aemailid']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db3b9904-63dc-4503-8919-62aea94b5b60",
+      "comment": "",
+      "command": "type",
+      "target": "id=aemailid",
+      "targets": [
+        ["id=aemailid", "id"],
+        ["name=aemailid", "name"],
+        ["css=#aemailid", "css:finder"],
+        ["xpath=//input[@id='aemailid']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin12345@gmail.com"
+    }, {
+      "id": "45a8d3d9-763d-4c75-8fa1-2c46ffbc2bb0",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a59aa837-93e2-445b-a10e-41cf50c13ad4",
+    "name": "change email id in admin profile (blank)",
+    "commands": [{
+      "id": "6de845fd-c1bd-49ba-a575-f6a7fe295b01",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a720401d-bf2f-4f20-977d-468fa4fabf64",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bba72de-2f6e-417b-95a5-1ca6a9e21a2a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "74eca511-ba9c-4da4-bf40-01ecf01cd293",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d29cba-0945-45a7-9cf3-286c294e9b43",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "930d449d-6685-4c3d-af39-47d94cb68d2c",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c2500d6-975f-4023-96a0-f4bcb19d83cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Admin Profile",
+      "targets": [
+        ["linkText=Admin Profile", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin Profile')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'admin-profile.php')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "000bcc15-fd3d-4ec4-a3af-d29cb900509b",
+      "comment": "",
+      "command": "click",
+      "target": "id=aemailid",
+      "targets": [
+        ["id=aemailid", "id"],
+        ["name=aemailid", "name"],
+        ["css=#aemailid", "css:finder"],
+        ["xpath=//input[@id='aemailid']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "801f7caa-d140-4eb3-a5a3-ab21956c2ba6",
+      "comment": "",
+      "command": "type",
+      "target": "id=aemailid",
+      "targets": [
+        ["id=aemailid", "id"],
+        ["name=aemailid", "name"],
+        ["css=#aemailid", "css:finder"],
+        ["xpath=//input[@id='aemailid']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72f121b2-c980-46ee-9e1c-7bba9b8d8d79",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "798fc831-1749-45a8-a3ad-002579b31caf",
+    "name": "change admin name in admin profile (blank)",
+    "commands": [{
+      "id": "8b5d8668-8ce8-469e-a784-ed387eed8ba1",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a614a5a6-8a7f-44c1-a822-0f48b5c71ee4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5f9df8c-4eb8-4a11-a0fa-461b7727b980",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "760ca33e-d093-408c-8809-2e6e332640e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fcf62e3-ff6e-4de1-984f-2f058dc6745b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "663ec1b5-455f-4641-9101-cd0b6951e533",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8ef49ce-8709-4b61-9b0e-a03d5031c6da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Admin Profile",
+      "targets": [
+        ["linkText=Admin Profile", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin Profile')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'admin-profile.php')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffc372c6-4941-40a7-a29e-6c53f4d508c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=adminname",
+      "targets": [
+        ["id=adminname", "id"],
+        ["name=adminname", "name"],
+        ["css=#adminname", "css:finder"],
+        ["xpath=//input[@id='adminname']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a611afa3-244d-488b-aeaf-88ebde07f602",
+      "comment": "",
+      "command": "type",
+      "target": "id=adminname",
+      "targets": [
+        ["id=adminname", "id"],
+        ["name=adminname", "name"],
+        ["css=#adminname", "css:finder"],
+        ["xpath=//input[@id='adminname']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a947cba-efca-4f9d-9173-cc405eb8e591",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0e3a62f4-b460-4554-bff1-03a0dd3b00e9",
+    "name": "change admin name in admin profile ",
+    "commands": [{
+      "id": "a071f7b8-1880-478d-9b4f-648759fbef98",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "528fc58e-9223-4b4d-a781-bfb6fcc5e2d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1daa747e-850f-4707-97fd-6dd6667f2675",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "077b2ea7-51ca-4537-acc2-d4eb129804dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43128a2d-2920-447f-a5c2-1a1a09713bf7",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "9272c272-7c1c-4885-917d-dd56420ad5f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "970ff4c5-8ec8-4a36-b57d-59a38c902fc3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Admin Profile",
+      "targets": [
+        ["linkText=Admin Profile", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Admin Profile')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'admin-profile.php')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Admin Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9eeb3a8d-f9a0-4379-81d1-109aff51f805",
+      "comment": "",
+      "command": "click",
+      "target": "id=adminname",
+      "targets": [
+        ["id=adminname", "id"],
+        ["name=adminname", "name"],
+        ["css=#adminname", "css:finder"],
+        ["xpath=//input[@id='adminname']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f8d6d71-f14a-4d8a-80d8-4a2c67454ae9",
+      "comment": "",
+      "command": "type",
+      "target": "id=adminname",
+      "targets": [
+        ["id=adminname", "id"],
+        ["name=adminname", "name"],
+        ["css=#adminname", "css:finder"],
+        ["xpath=//input[@id='adminname']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "de170478-e6e4-400e-8d91-d49f3217a3c1",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "27f96d8f-9661-4fcf-8e9f-1fdda444f4e2",
+    "name": "edit a course",
+    "commands": [{
+      "id": "55594498-cb6e-4b2d-8d00-202fff116b72",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba769010-8946-4366-9d29-9bf8c193c9c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6cdf665-0d03-4514-9f6f-1349bb02c28a",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "8aa709fc-1913-40bf-83dd-89e1a05a2cd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01af0e7d-ffbb-4596-a00c-5f54fbe6f9fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test@12345"
+    }, {
+      "id": "5762790b-dcff-4f9c-92f0-aac447c84609",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d16404c-7aed-45d6-b89d-5dd19a1fddd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Course",
+      "targets": [
+        ["linkText=Course", "linkText"],
+        ["css=#side-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Course')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ffaf491-ee78-4d77-acac-31e309957009",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View",
+      "targets": [
+        ["linkText=View", "linkText"],
+        ["css=.in:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//ul[@id='side-menu']/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'manage-courses.php')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de58a5ac-e08c-4b26-8202-b5948d10e8d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gradeX:nth-child(9) .btn-primary",
+      "targets": [
+        ["css=.gradeX:nth-child(9) .btn-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[9]", "xpath:link"],
+        ["xpath=//table[@id='dataTables-example']/tbody/tr[9]/td[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'edit-course.php?cid=23')]", "xpath:href"],
+        ["xpath=//tr[9]/td[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13cf3f90-3f5f-49d4-ae53-bdac1b0100ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=cshort",
+      "targets": [
+        ["id=cshort", "id"],
+        ["name=course-short", "name"],
+        ["css=#cshort", "css:finder"],
+        ["xpath=//input[@id='cshort']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83971ca4-915c-4ea2-b932-91a92526eb8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cshort",
+      "targets": [
+        ["id=cshort", "id"],
+        ["name=course-short", "name"],
+        ["css=#cshort", "css:finder"],
+        ["xpath=//input[@id='cshort']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e836be97-11dc-4cf8-ba7b-6ca8fe2cc478",
+      "comment": "",
+      "command": "click",
+      "target": "id=cfull",
+      "targets": [
+        ["id=cfull", "id"],
+        ["name=course-full", "name"],
+        ["css=#cfull", "css:finder"],
+        ["xpath=//input[@id='cfull']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45af44e0-ae42-44b5-a54a-02874c4fd33c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cfull",
+      "targets": [
+        ["id=cfull", "id"],
+        ["name=course-full", "name"],
+        ["css=#cfull", "css:finder"],
+        ["xpath=//input[@id='cfull']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "BACHELOR OF Computer Science"
+    }, {
+      "id": "74e4a75e-c3f5-454b-8347-4b79b98e77fa",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc7c8b0-0042-4d20-aa29-e6cdec1847d0",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.row > .form-group > .col-lg-6",
+      "targets": [
+        ["css=.row > .form-group > .col-lg-6", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66762875-22b9-483a-9f22-fbaa057e580f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > .form-group > .col-lg-6",
+      "targets": [
+        ["css=.row > .form-group > .col-lg-6", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45da8437-69fd-4e33-afc1-1d7b4edd4a1a",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div[2]/div/div/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b1854e78-930c-4b63-b9b5-6691ffd0ee66",
+    "name": "updating to new pass",
+    "commands": [{
+      "id": "13560a8f-cce9-4936-aade-a8f37eb1e360",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4eefaafb-3ae4-4ed4-8e1f-fdc8a29a9a3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99cf7b90-aa08-48be-a7a1-c78c72e2e7a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Password Recovery",
+      "targets": [
+        ["linkText=Password Recovery", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Password Recovery')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'password-recovery.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Password Recovery')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7be3c3a5-e571-43ea-adcb-5ee2c60dcaf8",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "0410af13-2995-4dc8-aee3-b62b141fc4da",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ab13816-dce6-4521-84de-e2c92ba14be1",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin12345@"
+    }, {
+      "id": "ac9a1a5a-9ed5-4b99-921e-32b0eb1dba92",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin12345@gmail.com"
+    }, {
+      "id": "69ec7f00-c8e2-4ae4-82b5-007db08c26aa",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bab0c9d-1b9f-4a8e-b5c6-f5141ad3a8b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test@12345"
+    }, {
+      "id": "41938c7d-6709-4f32-98ae-c5d56ef04e54",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6489fdb2-158c-4c36-a306-10c9d41d4091",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "356354c1-a5f9-41cd-8974-283c351e7ec9",
+    "name": "blank id and email ",
+    "commands": [{
+      "id": "5cb5b220-4c3e-491b-ad53-1079ebc68d23",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09cf6bb4-ad36-4ca3-9d99-9eee4dd7bff2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "375e5ced-ebfa-444f-9069-191308bd8e16",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Password Recovery",
+      "targets": [
+        ["linkText=Password Recovery", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Password Recovery')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'password-recovery.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Password Recovery')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9772dd01-9e8d-4eae-8429-b2d9e698f230",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c28a357-fba9-4e38-9b2f-da4e36ed8927",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test@12345"
+    }, {
+      "id": "3b2c3acf-c792-49da-8391-588b7e2612be",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7ebbeb05-01e1-4514-945d-182e36387782",
+    "name": "invalid id and email ",
+    "commands": [{
+      "id": "a232d878-722f-4bf5-8863-b4332a7a8512",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db67d02a-506f-47e0-87bd-176dcc0d3b83",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd5c33f2-cc90-4c2a-bead-5549bc730894",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Password Recovery",
+      "targets": [
+        ["linkText=Password Recovery", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Password Recovery')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'password-recovery.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Password Recovery')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6934460d-12d4-4e57-8e02-f12492a2e486",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "d828aca2-6a21-4a4d-b67a-322b08f14fb7",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fb368ed-70ad-4d19-817a-af683e43480d",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin12345"
+    }, {
+      "id": "f99956ad-71e9-4a9f-9f8f-1eef9554b143",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5eb5bdd0-e7a9-4ed0-b8f7-46c43dbf53d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "73e06216-3da0-4597-8dea-9e385fd73aba",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6edd71ae-9109-42a6-ab8f-b04276ee79a4",
+    "name": "valid id and email but blank password",
+    "commands": [{
+      "id": "80078988-b792-40b4-8a54-22457cdfd2a9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/studentrecordms/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1c5b86a-2efa-4504-b397-f58c2175b516",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45be3ea2-9d3e-4d44-958a-4d8b4ea30bc6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Password Recovery",
+      "targets": [
+        ["linkText=Password Recovery", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Password Recovery')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'password-recovery.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Password Recovery')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc2fc263-6524-4f99-908e-30eabafa39e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=id",
+      "targets": [
+        ["id=id", "id"],
+        ["name=id", "name"],
+        ["css=#id", "css:finder"],
+        ["xpath=//input[@id='id']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "868273d8-97f5-49b6-9f93-2ee7b477d5ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a033ea68-a68f-42d7-800f-b0a5d5410bc0",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailid",
+      "targets": [
+        ["id=emailid", "id"],
+        ["name=emailid", "name"],
+        ["css=#emailid", "css:finder"],
+        ["xpath=//input[@id='emailid']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin12345@gmail.com"
+    }, {
+      "id": "4238fd66-2a07-4fce-86e2-224ca0fa759b",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7f5961a-1c13-4fbe-9cb0-54435c909108",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24cf96e5-195c-4636-82b3-8dab0d6b50a8",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "78ce18b7-5f3a-4210-89f9-6b20bbaa70d3",
+    "name": "2 Delete a course",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9a06644-b92e-4a13-9231-00fc7e2b2238"]
+  }, {
+    "id": "18be0617-e016-4e68-bf16-e9cd4af08637",
+    "name": "3 Add a subject",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e49bcfc-470f-467d-82c1-a51b6b8a5d42", "d474e387-a4d9-4f41-b251-a5f52b4530be", "8a3e965a-c2c7-4fe1-9bb1-be1cacd7bd2b"]
+  }, {
+    "id": "976a4055-976d-4cc3-bd53-ec9ee68b6c75",
+    "name": "5 Updating Admin Profile",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["67654241-5435-4916-be1c-3b620f0be281", "a59aa837-93e2-445b-a10e-41cf50c13ad4", "798fc831-1749-45a8-a3ad-002579b31caf", "0e3a62f4-b460-4554-bff1-03a0dd3b00e9"]
+  }, {
+    "id": "4d526d24-4db3-44fc-a214-61f51572fb33",
+    "name": "1 Edit a new course",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["27f96d8f-9661-4fcf-8e9f-1fdda444f4e2"]
+  }, {
+    "id": "1685249f-341d-4b2a-b5d4-aa2bdf203bfe",
+    "name": "4 Password recovery",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b1854e78-930c-4b63-b9b5-6691ffd0ee66", "356354c1-a5f9-41cd-8974-283c351e7ec9", "7ebbeb05-01e1-4514-945d-182e36387782", "6edd71ae-9109-42a6-ab8f-b04276ee79a4"]
+  }],
+  "urls": ["http://localhost/studentrecordms/login.php"],
+  "plugins": []
+}
